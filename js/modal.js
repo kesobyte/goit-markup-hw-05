@@ -1,3 +1,5 @@
+// Homework #5 (JS)
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
