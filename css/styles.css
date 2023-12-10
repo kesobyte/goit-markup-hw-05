@@ -93,7 +93,7 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   height: 4px;
   background-color: var(--ocean);
   border-radius: 2px;
