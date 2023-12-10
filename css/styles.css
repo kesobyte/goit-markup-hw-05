@@ -490,6 +490,11 @@ li > .link:focus {
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
+  /* HW5 */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn.list {
@@ -539,6 +544,8 @@ img {
 /* HW4 */
 .svc.link {
   display: block;
+  /* HW5 */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svc.link:hover,
@@ -548,6 +555,31 @@ img {
 }
 
 /* HW5 */
+.svc-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-img-desc {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+  background-color: var(--iris);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svc.link:hover .svc-img-desc,
+.svc.link:focus .svc-img-desc {
+  transform: translateY(0%);
+}
+
 /* Modal */
 
 .order-modal {
